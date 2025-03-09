@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOR - Profil Pengguna</title>
+    <!-- Font Awesome dari CDNJS (CDNJS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts dari jsDelivr (jsDelivr) -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.3/index.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div><a href="index.html" class="logo">REMOR</a></div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for items">
+            </div>
+            <div class="nav-icons">
+                <a href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="SellItem.html"><i class="fas fa-dollar"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="chat.html"><i class="fas fa-envelope"></i></a>
+                <a href="profile.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+            <div class="sidebar">
+                <div class="user-avatar-small">
+                    <div class="avatar-circle-small"></div>
+                    <div class="user-name-small">Adit Sopo</div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-item active"><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <!-- <li class="menu-item"><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li> -->
+                    <li class="menu-item"><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="menu-item"><a href="#" onclick="window.location.href='login.html'"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+
+                </ul>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-header">
+                    <div class="profile-info">
+                        <div class="avatar-container">
+                            <div class="avatar-circle-large"></div>
+                        </div>
+                        <div class="user-details">
+                            <h1 class="user-name">Adit Sopo</h1>
+                            <div class="user-stats">
+                                <span class="stat"><span class="stat-value">0</span> Followers</span>
+                                <span class="stat"><span class="stat-value">1</span> Following</span>
+                                <span class="stat"><span class="stat-value">8</span> Items</span>
+                            </div>
+                            <div class="user-location">
+                                <span><i class="fas fa-map-marker-alt"></i> Padang</span>
+                                <span><i class="far fa-clock"></i> Last seen 5 minutes ago</span>
+                            </div>
+                            <p class="user-bio">Akun jualan tapi suka beli juga. Btw, feel free to ask! aku ngga gigit
+                                :)</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-edit-profile" onclick="window.location.href='EditProfile.html'">Edit Profile</button>
+                </div>
+
+                <div class="profile-tabs">
+                    <div class="tab active" data-tab="products">Products</div>
+                    <div class="tab" data-tab="reviews">Reviews</div>
+                </div>
+
+                <div class="tab-content" id="products-content">
+                    <div class="products-grid">
+                        <!-- Product 1 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/1741041603.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/dress1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/jeans1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/jas1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/pants1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 6 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/rings1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 7 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/1741057537.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                        <!-- Product 8 -->
+                        <div class="product-card" onclick="window.location.href='DetailProduct.html'">
+                            <div class="product-image">
+                                <img src="img/dasi1.jpeg" alt="POLO - XXL" class="product-img">
+                            </div>
+                            <div class="product-details">
+                                <div class="product-price">Rp25.000</div>
+                                <div class="product-info">POLO - XXL</div>
+                                <div class="product-location">Sleman, Yogyakarta</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="reviews-content" style="display: none;">
+                    <div class="reviews-container">
+                        <div class="overall-rating">
+                            <div class="rating-header">
+                                <i class="fas fa-star rating-star"></i>
+                                <span class="rating-number">5.0</span>
+                                <span class="rating-total">/ 5.0</span>
+                            </div>
+                            <div class="rating-stats">
+                                <span class="rating-count">2 rating</span>
+                                <span class="bullet">•</span>
+                                <span class="reviews-count">2 reviews</span>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list">
+                            <!-- Review 1 -->
+                            <div class="review-item">
+                                <div class="reviewer-avatar" style="background-color: #4CAF50;"></div>
+                                <div class="review-content">
+                                    <div class="reviewer-name">Adudu Hijau</div>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review-text">Super kind seller with everything as described! Arrived
+                                        quickly</div>
+                                </div>
+                            </div>
+
+                            <!-- Review 2 -->
+                            <div class="review-item">
+                                <div class="reviewer-avatar" style="background-color: #FFE4B5;"></div>
+                                <div class="review-content">
+                                    <div class="reviewer-name">Krabby's patties</div>
+                                    <div class="review-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="review-text">Super fast shipping, great communication, and super sweet!
+                                        😊😊</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">REMOR</div>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Remor, Inc.</p>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- jQuery dari jsDelivr (jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="profile.js"></script>
+</body>
+
+</html>

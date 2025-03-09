@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOR - Edit Profile</title>
+    <!-- Font Awesome dari CDNJS (CDNJS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts dari jsDelivr (jsDelivr) -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.3/index.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="editProfile.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div><a href="index.html" class="logo">REMOR</a></div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for items">
+            </div>
+            <div class="nav-icons">
+                <a href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="SellItem.html"><i class="fas fa-dollar"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="chat.html"><i class="fas fa-envelope"></i></a>
+                <a href="profile.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-container">
+            <div class="sidebar">
+                <div class="user-avatar-small">
+                    <div class="avatar-circle-small"></div>
+                    <div class="user-name-small">Adit Sopo</div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-item active" onclick="window.location.href='Profile.html'"><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                    <!-- <li class="menu-item"><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li> -->
+                    <li class="menu-item"><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li class="menu-item"><a href="#" onclick="window.location.href='login.html'"><i class="fa-solid fa-arrow-right-from-bracket"></i>Log out</a></li>
+
+                </ul>
+            </div>
+
+            <div class="edit-profile-content">
+                <h1 class="edit-profile-title">Edit Profile</h1>
+
+                <form id="editProfileForm" class="edit-profile-form">
+                    <div class="photo-upload-section">
+                        <div class="photo-preview" id="photoPreview">
+                            <div class="photo-placeholder"></div>
+                            <input type="file" id="photoInput" accept="image/*" hidden>
+                        </div>
+                        <button type="button" class="btn btn-photo" id="choosePhotoBtn">Choose Photo</button>
+                        <button type="button" class="btn btn-password" id="changePasswordBtn">
+                            <i class="fas fa-lock"></i> Change Password
+                        </button>
+                    </div>
+
+                    <div class="form-section">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" value="Adit Sopo" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" value="iamditsopo" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="aboutYou">About You</label>
+                            <textarea id="aboutYou" class="form-input"
+                                rows="3">Akun jualan tapi suka beli juga. Btw, feel free to ask! aku ngga gigit :)</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" class="form-input">
+                                <option value="man" selected>Man</option>
+                                <option value="woman">Woman</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group birth-date-group">
+                            <label>Birth Date</label>
+                            <div class="birth-date-inputs">
+                                <input type="text" value="30" class="form-input date-input" placeholder="DD">
+                                <select class="form-input month-input">
+                                    <option value="1" selected>Jan</option>
+                                    <option value="2">Feb</option>
+                                    <!-- Add other months -->
+                                </select>
+                                <input type="text" value="1900" class="form-input year-input" placeholder="YYYY">
+                            </div>
+                        </div>
+
+                        <div class="form-section-title">Edit Contact</div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="aditsop0@gmail.com" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" value="081122334455" class="form-input">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-submit">Submit Update</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">REMOR</div>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Remor, Inc.</p>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- jQuery dari jsDelivr (jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- Sweet Alert 2 dari CDNJS (CDNJS) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.12/sweetalert2.all.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="editProfile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+/* Main content styles */
+.main-content {
+  padding: 40px 0;
+  min-height: calc(100vh - 160px);
+}
+
+.order-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 32px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: #111827;
+}
+
+/* Order sections */
+.order-section {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.section-header {
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Address styles */
+.address-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.address-type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.address-text {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  color: #4299e1;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background-color: #ebf5ff;
+}
+
+/* Order item styles */
+.order-item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.item-image {
+  width: 80px;
+  height: 80px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.item-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.item-price {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Sidebar styles */
+.sidebar-section {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.payment-option:hover {
+  border-color: #4299e1;
+}
+
+.payment-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4299e1;
+}
+
+.bank-logo {
+  width: 40px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* Summary styles */
+.summary-items {
+  margin-top: 16px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.carbon-offset {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.carbon-offset input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4299e1;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  font-weight: 500;
+}
+
+.place-order-btn {
+  width: 100%;
+  background-color: #4299e1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.2s;
+}
+
+.place-order-btn:hover {
+  background-color: #3182ce;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #e5e7eb;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  color: #6b7280;
+  transition: color 0.2s;
+}
+
+.social-link:hover {
+  color: #4299e1;
+}
+
+.footer-links {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #4299e1;
+}
+
+.dot {
+  margin: 0 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .order-layout {
+      grid-template-columns: 1fr;
+  }
+
+  .order-sidebar {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+      display: none;
+  }
+
+  .header-icons {
+      gap: 12px;
+  }
+
+  .order-item {
+      flex-wrap: wrap;
+  }
+
+  .item-price {
+      width: 100%;
+      text-align: right;
+  }
+
+  .footer-links {
+      flex-direction: column;
+  }
+
+  .dot {
+      display: none;
+  }
+}

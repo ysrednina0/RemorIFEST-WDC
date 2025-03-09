@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REMOR - Chat</title>
+    <!-- Font Awesome dari CDNJS (CDNJS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts dari jsDelivr (jsDelivr) -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.3/index.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="ChatStyle.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div><a href="index.html" class="logo">REMOR</a></div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for items">
+            </div>
+            <div class="nav-icons">
+                <a href="Cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="SellItem.html"><i class="fas fa-dollar"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="chat.html"><i class="fas fa-envelope"></i></a>
+                <a href="profile.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="chat-container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Inbox</h2>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="menu-item active"><a href="#"><i class="fas fa-inbox"></i> Chat</a></li>
+                    <li class="menu-item"><a href="#"><i class="fas fa-star"></i> Review</a></li>
+                </ul>
+                <div class="chat-list">
+                    <div class="chat-item active">
+                        <div class="chat-avatar" style="background-color: #e57373;">
+                            <span>L</span>
+                        </div>
+                        <div class="chat-info">
+                            <div class="chat-name">Lyera Store</div>
+                            <div class="chat-preview">barangnya ready</div>
+                        </div>
+                        <div class="chat-meta">
+                            <span class="chat-time">Mar 20</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chat Area -->
+            <div class="chat-area">
+                <div class="chat-header">
+                    <div class="chat-header-info">
+                        <div class="chat-avatar" style="background-color: #e57373;">
+                            <span>L</span>
+                        </div>
+                        <div class="chat-name">Lyera Store</div>
+                    </div>
+                    <button class="btn-options">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message-date">Mar 20</div>
+
+
+                    <div class="product-preview">
+                        <img src="img/1741041603.jpeg" alt="" class=" product-preview">
+                    </div>
+
+                    <div class="message buyer">
+                        <div class="message-content">Hello, is the item still available?</div>
+                    </div>
+                    <div class="message-group">
+                        <div class="chat-avatar" style="background-color: #e57373;">
+                            <span>L</span>
+                        </div>
+                        <div class="message seller">
+                            <div class="message-content">oh yeah, still available in good condition</div>
+                        </div>
+                    </div>
+                    <div class="message-group">
+                        <div class="chat-avatar" style="background-color: #e57373;">
+                            <span>L</span>
+                        </div>
+                        <div class="message seller">
+                            <div class="message-content">do you want the detail of this product?</div>
+                        </div>
+                    </div>
+                    <div class="message-group">
+                        <div class="chat-avatar" style="background-color: #e57373;">
+                            <span>L</span>
+                        </div>
+                        <div class="message seller">
+                            <div class="message-content">i can show you if you want</div>
+                        </div>
+                    </div>
+                    <div class="message buyer">
+                        <div class="message-content">Yes, please</div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <button class="btn-attachment">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <input type="text" placeholder="Type Something" class="message-input">
+                    <button class="btn-send">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">REMOR</div>
+            <div class="social-icons">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 Remor, Inc.</p>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Community Guidelines</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- jQuery dari jsDelivr (jsDelivr) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="chat.js"></script>
+</body>
+
+</html>
